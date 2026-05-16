@@ -1,73 +1,124 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# LeClematis
 
-Currently, two official plugins are available:
+LeClematis is a creative brand website centered around three connected experiences:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Nature-inspired storytelling and products
+- Curated vintage resale
+- Photography portfolio, prints, and services
 
-## React Compiler
+The project is being built as a modern React application using TypeScript, Vite, and a scalable feature-based folder architecture. The long-term goal is to develop LeClematis into a polished creative-commerce platform with catalog management, cart functionality, Supabase integration, and secure payments through Stripe.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Project Vision
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+LeClematis blends nature, vintage aesthetics, and photography into one cohesive digital experience.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The website is designed to support:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- A nature-inspired brand identity
+- A vintage resale product catalog
+- Photography galleries and portfolio pages
+- Photography print sales
+- Contact and booking inquiries
+- Newsletter signups
+- Future shopping cart functionality
+- Future Supabase-powered backend
+- Future Stripe Checkout payment flow
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Core Concept
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+LeClematis is structured around three connected experiences:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+'''Nature-inspired storytelling and products'''
+LeClematis
+├── Nature
+├── Vintage Resale
+└── Photography
+
+
+### Nature
+
+The nature experience represents the emotional and visual foundation of the brand. 
+It may include:
+
+Nature-inspired products
+Botanical visuals
+Seasonal collections
+Nature photography
+Editorial or journal-style storytelling
+Vintage Resale
+
+The vintage resale experience supports curated one-of-one items.
+
+It may include:
+
+Vintage clothing
+Vintage objects or accessories
+Condition notes
+Measurements
+Product availability
+Sold status
+Collection drops
+Photography
+
+The photography experience acts as both a portfolio and a product/service offering.
+
+It may include:
+
+Photography galleries
+Photo prints
+Creative sessions
+Product photography
+Booking inquiries
+Tech Stack
+Current Stack
+React
+TypeScript
+Vite
+React Router
+CSS
+Feature-based project architecture
+Planned Stack
+Redux Toolkit for cart, filters, wishlist, and UI state
+Supabase for database, storage, authentication, and inquiries
+Stripe Checkout for secure payments
+Tailwind CSS for styling
+Vitest and React Testing Library for testing
+Vercel or Netlify for deployment
+
+
+
+## Development Principles
+This project follows these principles:
+  Keep components reusable
+  Keep business logic out of UI components when possible
+  Use TypeScript types for important data structures
+  Use feature folders for scalable organization
+  Start with mock data before connecting the backend
+  Keep secrets out of the frontend
+  Use Supabase for data and storage
+  Use Stripe for secure payment processing later
+  Build incrementally instead of adding everything at once
+
+## Planned Supabase Tables:
+  products
+  product_images
+  collections
+  photo_galleries
+  photo_images
+  contact_messages
+  booking_inquiries
+  newsletter_subscribers
+  orders
+  order_items
+  profiles
+
+
+
+## License
+Private project
+
