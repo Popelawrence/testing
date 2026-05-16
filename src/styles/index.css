@@ -237,8 +237,7 @@ textarea {
   line-height: 1.75;
 }
 
-.brand-panel a,
-.product-link {
+.brand-panel a {
   color: var(--accent);
   font-weight: 600;
 }
@@ -289,18 +288,11 @@ textarea {
 
 .shop-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
   gap: 2rem;
 }
 
 .shop-main {
   min-width: 0;
-}
-
-.shop-sidebar {
-  position: sticky;
-  top: 1rem;
-  align-self: start;
 }
 
 .mini-cart {

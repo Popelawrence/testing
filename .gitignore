@@ -33,3 +33,4 @@ dist-ssr
 # Private AI agent docs
 docs/ai/
 AGENTS.md
+.vercel

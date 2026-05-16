@@ -1,7 +1,7 @@
 const navigationLinks = [
   { label: 'Home', to: '/' },
-  { label: 'Nature', to: '/nature' },
-  { label: 'Vintage', to: '/vintage' },
+  { label: 'Natural plant products', to: '/nature' },
+  { label: 'Vintage collections', to: '/vintage' },
   { label: 'Photography', to: '/photography' },
   { label: 'Shop', to: '/shop' },
   { label: 'About', to: '/about' },

@@ -7,7 +7,7 @@ export default function ContactPage() {
         <h1>Contact</h1>
         <p>
           Use this page to reach out for bookings, inquiries, and creative collaborations. A contact form
-          will be added in the next phase.
+          will be added.
         </p>
       </section>
     </Container>

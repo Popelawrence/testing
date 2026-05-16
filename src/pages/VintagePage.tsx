@@ -8,15 +8,15 @@ export default function VintagePage() {
   return (
     <Container>
       <section className="page-section">
-        <h1>Vintage</h1>
+        <h1>Vintage collections</h1>
         <p>
-          Curated vintage resale and one-of-one finds. The catalog highlights pieces with character,
-          craftsmanship, and a sense of story.
+          Curated vintage collections and one-of-one finds. The catalog highlights pieces with
+          character, craftsmanship, and a sense of story.
         </p>
       </section>
 
       <section className="featured-products">
-        <h2>Vintage collection</h2>
+        <h2>Vintage collections</h2>
         <ProductGrid products={products} />
       </section>
     </Container>

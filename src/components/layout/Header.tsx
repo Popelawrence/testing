@@ -20,10 +20,10 @@ export default function Header() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/nature">Nature</Link>
+              <Link to="/nature">Natural plant products</Link>
             </li>
             <li>
-              <Link to="/vintage">Vintage</Link>
+              <Link to="/vintage">Vintage collections</Link>
             </li>
             <li>
               <Link to="/photography">Photography</Link>

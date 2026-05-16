@@ -6,6 +6,7 @@ type ProductGridProps = {
 }
 
 export default function ProductGrid({ products }: ProductGridProps) {
+  // Display each product using a card layout
   return (
     <div className="product-grid">
       {products.map((product) => (

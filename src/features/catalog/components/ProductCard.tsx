@@ -9,6 +9,7 @@ type ProductCardProps = {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
+  // Use Redux dispatch to add items to the cart
   const dispatch = useAppDispatch()
 
   return (

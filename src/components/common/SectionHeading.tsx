@@ -7,6 +7,7 @@ type SectionHeadingProps = {
 }
 
 export default function SectionHeading({ title, description, children }: SectionHeadingProps) {
+  // Section heading with optional descriptive text and extra content
   return (
     <div className="section-heading">
       <h2>{title}</h2>

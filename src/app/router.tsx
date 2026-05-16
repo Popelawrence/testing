@@ -11,6 +11,7 @@ import VintagePage from '../pages/VintagePage'
 function AppRouter() {
   return (
     <Routes>
+      {/* App routes mapped to page components */}
       <Route path="/" element={<HomePage />} />
       <Route path="/shop" element={<ShopPage />} />
       <Route path="/vintage" element={<VintagePage />} />

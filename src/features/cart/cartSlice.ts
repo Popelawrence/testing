@@ -15,6 +15,7 @@ const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
+    // Add a product to cart or increment its quantity
     addToCart(state, action: PayloadAction<Product>) {
       if (action.payload.sold) {
         return
@@ -29,9 +30,11 @@ const cartSlice = createSlice({
 
       state.items.push({ ...action.payload, quantity: 1 })
     },
+    // Remove a cart entry by product id
     removeFromCart(state, action: PayloadAction<string>) {
       state.items = state.items.filter((item) => item.id !== action.payload)
     },
+    // Ensure quantities stay at least 1
     updateQuantity(
       state,
       action: PayloadAction<{ id: string; quantity: number }>,
@@ -42,6 +45,7 @@ const cartSlice = createSlice({
       }
       item.quantity = Math.max(1, action.payload.quantity)
     },
+    // Empty the cart
     clearCart(state) {
       state.items = []
     },

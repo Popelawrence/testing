@@ -23,7 +23,7 @@ export default function HomePage() {
 
       <section className="brand-panels">
         <article className="brand-panel">
-          <h2>Nature</h2>
+          <h2>Natural plant products</h2>
           <p>
             Soft editorial scenes, botanical textures, and slow-paced seasonal storytelling that
             feels grounded and lush.
@@ -32,7 +32,7 @@ export default function HomePage() {
         </article>
 
         <article className="brand-panel">
-          <h2>Vintage</h2>
+          <h2>Vintage collections</h2>
           <p>
             Thoughtfully sourced pieces with character, craftsmanship, and history for the modern
             wardrobe and home.

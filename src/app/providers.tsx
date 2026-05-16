@@ -7,7 +7,10 @@ type ProvidersProps = {
 }
 
 function Providers({ children }: ProvidersProps) {
-  return <Provider store={store}>{children}</Provider>
+  return (
+    // Provide the Redux store to the whole application
+    <Provider store={store}>{children}</Provider>
+  )
 }
 
 export default Providers

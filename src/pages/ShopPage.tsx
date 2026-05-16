@@ -13,12 +13,14 @@ export default function ShopPage() {
   const [searchParams] = useSearchParams()
   const category = searchParams.get('category') as Product['category'] | null
 
+  // Filter products by query category when provided
   const products = useMemo(() => {
     return category && validCategories.includes(category)
       ? getProductsByCategory(category)
       : getAllProducts()
   }, [category])
 
+  // Pull cart contents from Redux state for the header badge
   const cartItems = useAppSelector((state) => state.cart.items)
 
   const itemCount = useMemo(
@@ -59,41 +61,6 @@ export default function ShopPage() {
             <ProductGrid products={products} />
           </section>
         </div>
-
-        <aside className="shop-sidebar">
-          <section className="mini-cart">
-            <div className="mini-cart-header">
-              <p className="eyebrow">Mini cart</p>
-              <h2>Shopping summary</h2>
-            </div>
-
-            {cartItems.length === 0 ? (
-              <p className="mini-cart-empty">Your cart is empty. Add a piece to see it here.</p>
-            ) : (
-              <div className="mini-cart-items">
-                {cartItems.map((item) => (
-                  <div className="mini-cart-item" key={item.id}>
-                    <div className="mini-cart-item-info">
-                      <span>{item.name}</span>
-                      <small>{item.quantity} × {formatCurrency(item.price)}</small>
-                    </div>
-                    <strong>{formatCurrency(item.price * item.quantity)}</strong>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            <div className="mini-cart-footer">
-              <div className="mini-cart-total">
-                <span>Total</span>
-                <strong>{formatCurrency(cartTotal)}</strong>
-              </div>
-              <button type="button" className="button button-primary" disabled={!cartItems.length}>
-                Checkout
-              </button>
-            </div>
-          </section>
-        </aside>
       </div>
     </Container>
   )

@@ -6,6 +6,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 }
 
 export default function Button({ variant = 'primary', className = '', ...props }: ButtonProps) {
+  // Pick a CSS class based on the button variant
   const variantClass = {
     primary: 'button-primary',
     secondary: 'button-secondary',

@@ -8,15 +8,15 @@ export default function NaturePage() {
   return (
     <Container>
       <section className="page-section">
-        <h1>Nature</h1>
+        <h1>Natural plant products</h1>
         <p>
-          Nature is the emotional foundation of LeClematis. Expect storytelling, botanical details, and
-          visual moments inspired by the outdoors.
+          Natural plant products are the emotional foundation of LeClematis. Expect storytelling,
+          botanical details, and visual moments inspired by the outdoors.
         </p>
       </section>
 
       <section className="featured-products">
-        <h2>Nature collection</h2>
+        <h2>Natural plant products collection</h2>
         <ProductGrid products={products} />
       </section>
     </Container>
