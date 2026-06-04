@@ -35,9 +35,9 @@ LeClematis is structured around three connected experiences:
 
 '''Nature-inspired storytelling and products'''
 LeClematis
-├── Nature
-├── Vintage Resale
-└── Photography
+  ├── Nature
+  ├── Vintage Resale
+  └── Photography
 
 
 ### Nature
@@ -50,7 +50,8 @@ Botanical visuals
 Seasonal collections
 Nature photography
 Editorial or journal-style storytelling
-Vintage Resale
+
+### Vintage Resale
 
 The vintage resale experience supports curated one-of-one items.
 
@@ -63,7 +64,8 @@ Measurements
 Product availability
 Sold status
 Collection drops
-Photography
+
+### Photography
 
 The photography experience acts as both a portfolio and a product/service offering.
 
@@ -74,21 +76,23 @@ Photo prints
 Creative sessions
 Product photography
 Booking inquiries
-Tech Stack
-Current Stack
-React
+
+## Tech Stack
+Current Stack:
+ReactJS
 TypeScript
 Vite
 React Router
 CSS
 Feature-based project architecture
-Planned Stack
-Redux Toolkit for cart, filters, wishlist, and UI state
-Supabase for database, storage, authentication, and inquiries
-Stripe Checkout for secure payments
-Tailwind CSS for styling
-Vitest and React Testing Library for testing
-Vercel or Netlify for deployment
+
+## Planned Stack
+- Redux Toolkit for cart, filters, wishlist, and UI state
+- Supabase for database, storage, authentication, and inquiries
+- Stripe Checkout for secure payments
+- Tailwind CSS for styling
+- Vitest and React Testing Library for testing
+- Vercel for deployment
 
 
 
